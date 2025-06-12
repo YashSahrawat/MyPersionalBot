@@ -103,7 +103,7 @@ def send_night_greeting():
             print(f"Greeting error: {e}")
 
 def run_scheduler():
-    schedule.every().day.at("10:40").do(send_morning_greeting)  # Morning
+    schedule.every().day.at("01:30").do(send_morning_greeting)  # Morning
     schedule.every().day.at("19:00").do(send_night_greeting)   # Night (10 PM)
 
     while True:
